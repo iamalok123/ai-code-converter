@@ -136,7 +136,7 @@ function App() {
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 w-full max-w-7xl relative z-10">
         <div 
-          className="bg-slate-900/80 border border-slate-700 rounded- shadow-2xl
+          className="bg-slate-900/80 border border-slate-700 rounded-2xl shadow-2xl
           overflow-hidden backdrop-blur-md"
         >
           <div 
@@ -195,12 +195,10 @@ function App() {
         feedback && (
           <p
             className={`text-center font-semibold
-            drop-shadow-md relative text-white z-10 ${ feedback.
-            includes(
-              "✅"|| feedback.includes("📋")
+            drop-shadow-md relative text-white z-10 ${ feedback.includes("✅") || feedback.includes("📋")
               ? "text-emerald-400"
               : "text-rose-400"
-            )}`}
+            }`}
           >
             {feedback}
           </p>
